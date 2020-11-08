@@ -1,0 +1,7 @@
+<button [class.firstNote]="notes.length == 0" (click)="addNote()">Add note</button>
+
+<div class="notes">
+  <div class="note" *ngFor="let note of notes">
+    <app-note (addText)="addText($event)" (removed)="removeNote(note.id)" [note]="note"></app-note>
+  </div>
+</div>

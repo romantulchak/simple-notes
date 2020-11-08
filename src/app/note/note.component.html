@@ -1,0 +1,9 @@
+
+<div class="note">
+  <div class="note__top_panel">
+    <button class="remove__note" (click)="removeNote()">X</button>
+  </div>
+
+  <textarea [(ngModel)]="note.text" (input)="saveNoteText()" name="" id="" cols="30" rows="10"> {{note.text}}</textarea>
+</div>
+
